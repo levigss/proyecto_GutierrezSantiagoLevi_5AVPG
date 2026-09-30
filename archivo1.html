@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - Mi Sitio Web</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4efea;
+            color: #3e2723;
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3e2723; /* Café oscuro / Espresso */
+            color: #faf0e6;
+            padding: 10px 20px;
+        }
+
+
+        .logo-pequeno {
+            width: 50px;
+            height: auto;
+            display: block;
+        }
+
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+
+        .logo-cabecera {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+
+        .boton-nav {
+            text-decoration: none;
+            color: #faf0e6;
+            background-color: #6d4c41; /* Café medio */
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+
+        .boton-nav:hover {
+            background-color: #8d6e63; /* Café claro al pasar el mouse */
+            color: #ffffff;
+        }
+
+
+        .boton-nav.activo {
+            background-color: #c8963e; /* Tono caramelo para la pestaña activa */
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+
+        aside {
+            width: 25%;
+            background-color: #d7ccc8; /* Café con leche claro */
+            padding: 15px;
+            border-radius: 6px;
+            color: #3e2723;
+        }
+
+
+        section {
+            width: 75%;
+            background-color: #fffbf5; /* Crema suave para el área de lectura */
+            padding: 15px;
+            border-radius: 6px;
+            color: #3e2723;
+        }
+
+
+        /* Estilo para la foto del perro en el artículo */
+        .img-articulo {
+            float: right;
+            width: 130px;
+            height: auto;
+            border-radius: 6px;
+            margin-left: 15px;
+            margin-bottom: 10px;
+        }
+
+
+        /* Estilo para la imagen del anuncio en la barra lateral */
+        .img-anuncio {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 10px;
+            display: block;
+        }
+
+
+        footer {
+            background-color: #2c1d18; /* Chocolate muy oscuro */
+            color: #d7ccc8;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0; color: #faf0e6;">Mi Sitio Web</h1>
+            <nav style="color: #d7ccc8; margin: 5px 0;"> Menú de navegación </nav>
+            <a href="archivo1.html" class="boton-nav activo">inicio</a>
+            <a href="archivo2.html" class="boton-nav">servicio</a>
+            <a href="archivo3.html" class="boton-nav">contacto</a>
+        </div>
+        <img src="Imagenes/levi.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera">
+    </header>
+    <main>
+        <aside>
+            <h3 style="margin-top: 0;">Barra Lateral</h3>
+            <p>Anuncio publicitario:</p>
+            <!-- Imagen del anuncio -->
+            <img src="Imagenes/anuncio.jpg" alt="Anuncio Coca Cola" class="img-anuncio">
+        </aside>
+        <section>
+            <article>
+                <!-- Imagen en la esquina superior derecha -->
+                <img src="Imagenes/perro1.jpg" alt="Golden Retriever" class="img-articulo">
+                <h2 style="margin-top: 0;">Raza: Golden Retriever</h2>
+                <p>El Golden Retriever es una raza de perro amigable, inteligente y cariñosa. Son conocidos por su carácter paciente, lo que los convierte en una excelente compañía para familias y niños.</p>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+
+</body>
+
+
+</html>
